@@ -1,12 +1,15 @@
--- 注册客户端命令
+local authorInfo = "插件作者: 御.江山, QQ号: 896136977"
+
 RegisterCommand('id', function()
-    -- 获取玩家的服务器ID
     local playerId = GetPlayerServerId(PlayerId())
-    -- 发送消息到聊天框
+    TriggerEvent('chat:addMessage', {
+        color = { 255, 255, 0 },
+        multiline = true,
+        args = { '玩家查看自己的ID', authorInfo }
+    })
     TriggerEvent('chat:addMessage', {
         color = { 255, 0, 0 },
         multiline = true,
         args = { '系统提示', '你的ID是: ' .. playerId }
     })
 end, false)
-    
