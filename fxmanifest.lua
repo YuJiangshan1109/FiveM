@@ -1,5 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
+lua54 'yes'
 
 author '御.江山,QQ号:896136977'
 description 'FiveM玩家查看ID插件（QB框架）'
